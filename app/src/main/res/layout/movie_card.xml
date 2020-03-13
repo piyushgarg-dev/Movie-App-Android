@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardElevation="5dp"
+    android:paddingVertical="10dp"
+    android:elevation="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/bg_img"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/spidy" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Amazing Spiderman"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/movie_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Two young people arrive in New York to spend a weekend, but once they arrive they're met with bad weather and a series of adventures."
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/popularity"
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                android:text="12.0"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/votes"
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                android:text="12.0"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/avg_votes"
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                android:text="12.0"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="10dp"
+         android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                app:srcCompat="@drawable/popularity"
+                />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                app:srcCompat="@drawable/votes" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                app:srcCompat="@drawable/avg_vote" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/movie_dec_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#26ae60"
+            android:text="Save for later"
+            android:onClick="saveForLater"
+
+
+
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
